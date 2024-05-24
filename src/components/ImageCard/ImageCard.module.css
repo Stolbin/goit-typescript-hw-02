@@ -1,5 +1,4 @@
 .card {
-  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   background-color: #fff;
@@ -10,7 +9,13 @@
   height: 200px;
   object-fit: cover;
   display: block;
-  border-radius: 8px 8px 0 0;
+  border-radius: 4px 4px 0 0;
+  transition: border-radius 1s ease;
+  &:hover {
+    border-radius: 8px 8px 0 0;
+    border: rgb(172, 172, 172) 1px dashed;
+    transition: border-radius 2s ease;
+  }
 }
 
 .details {
