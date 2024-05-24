@@ -1,7 +1,9 @@
 .card {
+  padding: 1px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   background-color: #fff;
+  border-radius: 8px 8px 0 0;
 }
 
 .image {
@@ -9,10 +11,11 @@
   height: 200px;
   object-fit: cover;
   display: block;
-  border-radius: 4px 4px 0 0;
+  border-radius: 8px 8px 0 0;
   transition: border-radius 1s ease;
+  border: transparent 1px solid;
   &:hover {
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 12px 12px;
     border: rgb(172, 172, 172) 1px dashed;
     transition: border-radius 2s ease;
   }

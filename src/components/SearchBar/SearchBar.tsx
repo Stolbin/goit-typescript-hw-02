@@ -17,7 +17,9 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (query.trim() === "") {
-      toast.error("Field can't be empty");
+      toast.error("Field can't be empty", {
+        position: "top-left",
+      });
       return;
     }
     onSubmit(query);
@@ -28,7 +30,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
       <header className={css.header}>
         <form onSubmit={handleSubmit} className={css.bar}>
           <button type="submit" className={css.button}>
-            <FiSearch size="16px" />
+            <FiSearch size="18px" />
           </button>
 
           <input

@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(41, 41, 231);
+  background-color: #ffc400;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -15,7 +15,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  color: white;
+  color: rgb(0, 0, 0);
   outline: none;
 }
 .button:hover,
@@ -34,6 +34,6 @@
 }
 .input:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #ffc400;
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
 }
